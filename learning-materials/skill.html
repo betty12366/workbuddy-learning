@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Skill 概念学习资料</title>
+</head>
+<body>
+
+<h1>Skill（技能）</h1>
+
+<h2>学习目标</h2>
+<ul>
+  <li>理解Skill的核心定义及其在AI工作流中的作用</li>
+  <li>掌握Skill的核心组成部分和设计思路</li>
+  <li>能够识别适合固化为Skill的任务类型</li>
+</ul>
+
+<h2>个人解释</h2>
+<p><strong>Skill就是把一套"可复用的经验流程"打包成一个模块。</strong>比如你发现每次写某个类型的内容都需要"先查数据→再找案例→然后生成初稿→最后润色"，你把这个流程固定下来，起个名字，下次做同类任务时一键调用，不用每次都从头教AI怎么做。</p >
+
+<h2>核心机制 / 组成部分</h2>
+<ul>
+  <li><strong>触发条件</strong>：什么时候使用这个Skill</li>
+  <li><strong>输入参数</strong>：用户需要提供什么信息</li>
+  <li><strong>执行步骤</strong>：按什么顺序做哪些事</li>
+  <li><strong>输出格式</strong>：最终产出的内容结构</li>
+  <li><strong>参考示例</strong>：一个典型的使用案例</li>
+</ul>
+
+<h2>具体应用场景</h2>
+<p><strong>场景：每周销售周报生成</strong><br>
+你每周都要做一次销售周报。你把"提取销售数据→计算同比/环比→分析异常值→生成PPT→写邮件摘要"这整套流程固化为一个Skill。以后每周五，你只需要说"运行销售周报Skill"，AI自动执行所有步骤，10分钟出结果，而你之前需要3小时。</p >
+
+<h2>容易混淆的问题 / 使用边界</h2>
+<ul>
+  <li><strong>Skill ≠ Prompt</strong>：Prompt是一次性指令，Skill是可复用的标准化流程</li>
+  <li><strong>Skill ≠ Agent</strong>：Agent是"执行者"，Skill是"执行标准"或"操作手册"</li>
+  <li><strong>Skill不是万能的</strong>：只适用于流程相对固定的任务，创意性太强的任务不适合</li>
+</ul>
+
+<h2>自测问题</h2>
+<ol>
+  <li>Skill和Prompt的核心区别是什么？</li>
+  <li>为什么说Skill能"沉淀可复用的任务知识"？</li>
+  <li>举一个你专业领域内适合做成Skill的任务。</li>
+  <li>什么类型的任务不适合做成Skill？</li>
+</ol>
+
+<h2>参考来源</h2>
+<ul>
+  <li><a href=" ">Anthropic. "Claude Skills"</a ></li>
+  <li><a href="https://platform.openai.com/docs/assistants/tools">OpenAI. "Assistants API - Tools"</a ></li>
+</ul>
+
+</body>
+</html>
