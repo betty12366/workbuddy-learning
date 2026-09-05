@@ -31,9 +31,9 @@
 - `learning-materials/skill.html` —— Skill（技能）学习资料
 - `learning-materials/concept-relationship.md` —— 三者关系说明（含 Mermaid 关系图）
 
-三份学习资料均按「概念学习资料生成器」Skill 的输出结构编写：学习目标、个人解释、核心机制、应用场景、易混淆辨析、自测问题、参考来源。
+三份学习资料均按照「概念学习资料生成器」Skill 的输出结构编写：学习目标、个人解释、核心机制、应用场景、易混淆辨析、自测问题、参考来源。
 
-关系的概括：**上下文是输入信息，Agent 是执行者，Skill 是经验手册。**
+`concept-relationship.md` 用一句话概括三者关系：**上下文是“输入信息”，Agent 是“执行者”，Skill 是“经验手册”**。
 
 ## 使用说明
 
