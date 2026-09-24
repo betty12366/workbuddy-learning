@@ -7,4 +7,14 @@ print("Hello, World!")
 
 # Python 中的变量
 # 变量是用于存储数据的命名空间。在 Python 中，变量不需要声明类型
-print("这段代码运行在 Jupyter Notebook 中的 Python 3 环境")
+
+print("Hello, World!")
+metric = 0.032
+type(metric)
+a = 1
+
+a1 = 0.032
+print(type(a1))
+
+a2 = 100
+print(type(a2))
