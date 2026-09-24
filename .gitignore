@@ -1,0 +1,19 @@
+# 数据文件
+data/*.csv
+data/*.xlsx
+data/*.sav
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# R
+.Rhistory
+.RData
+
+# 系统文件
+.DS_Store
+Thumbs.db
