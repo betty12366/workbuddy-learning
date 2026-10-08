@@ -12,6 +12,7 @@
 | `scripts/` | 练习代码（Python / R 等） |
 | `resources/` | 参考资料、拓展阅读 |
 | `learning-materials/` | WorkBuddy 作业：学习资料 |
+| `python-basics/` | Python 基础语法可运行教材（5 章 + README） |
 | `.workbuddy/skills/` | WorkBuddy 作业：Skill 定义 |
 
 ## 学习路线
