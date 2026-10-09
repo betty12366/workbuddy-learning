@@ -47,8 +47,8 @@ print(模块A.变量A)
 
 print("打招呼（小明）")
 
-from zai import ZhipuAiClient
-client = ZhipuAiClient(api_key="YOUR_API_KEY")
+from zhipuai import ZhipuAI
+client = ZhipuAI(api_key="api-key")
 response = client.chat.completions.create(
     model="glm-5.3",
     messages=[
@@ -72,3 +72,130 @@ class Person:
 小强 = Person("小强", 10)
 小强.introduce()
 小强.say_hello()
+
+# 变量类型
+a1 = 10
+a2 = 2.2
+a3 = "Hello"
+a4 = [1, 2, 3]
+a5 = (4, 5, 6)
+a6 = {"key1": "value1", "key2": "value2"}
+a7 = {1, 2, 3}
+a8 = None
+a9 = True
+
+print(type(a1), type(a2), type(a3), type(a4), type(a5), type(a6), type(a7), type(a8), type(a9))  # <class 'int'>
+## 字符串的格式化
+name = "小明"
+age = 10
+print(f"我的名字是{name}，今年{age}岁。")
+
+## 流程控制
+
+## 条件语句
+
+x = 10
+y = 20
+
+if x > y:
+    print("x is greater than y")
+elif x < y:
+    print("x is less than y")
+else:
+    print("x is equal to y")
+
+## 循环语句
+
+for i in range(5):
+    print(i)
+
+
+while x > 0:
+    print(x)
+    x -= 1
+    ## 函数
+
+def 打招呼(姓名, 内容="你好"):
+    print(f"{内容}, {姓名}!")
+    return f"{内容}, {姓名}!"
+打招呼("小明")
+
+# 模块与包
+
+import 模块A
+
+print(模块A.变量A)
+print(模块A.函数A())
+
+from 模块A import 变量B
+
+print(变量B)
+
+result = 打招呼("小红", "早上好")
+print(result)
+
+# 异常处理
+
+try:
+    result = 10 / 0
+
+except ZeroDivisionError:
+    print("除以零错误！")
+
+    import os
+from dotenv import load_dotenv
+from zhipuai import ZhipuAI
+
+load_dotenv()  # 读取当前目录 .env
+
+api_key = os.environ.get("ZHIPU_API_KEY")
+if not api_key:
+    raise RuntimeError("未找到 ZHIPU_API_KEY，请检查 .env 文件")
+
+# 初始化客户端
+client = ZhipuAI(api_key=api_key)
+
+# 创建聊天完成请求
+response = client.chat.completions.create(
+    model="glm-4-flash",
+    messages=[
+        {"role": "system", "content": "您是一个有用的AI助手。"},
+        {"role": "user", "content": "您好，请介绍一下自己。"},
+    ],
+    temperature=0.6,
+)
+
+# 获取回复
+print(response.choices[0].message.content)
+
+def zhipuAI(提示词, temperature=0.6):
+
+
+    import os
+    from dotenv import load_dotenv
+    from zai import ZhipuAiClient
+
+    load_dotenv()  # 读取当前目录 .env
+
+    api_key = os.environ.get("ZHIPU_API_KEY")
+    if not api_key:
+        raise RuntimeError("未找到 ZHIPU_API_KEY，请检查 .env 文件")
+
+    # 初始化客户端
+    client = ZhipuAiClient(api_key=api_key)
+
+    # 创建聊天完成请求
+    response = client.chat.completions.create(
+        model="glm-4-flash",
+        messages=[
+            {"role": "system", "content": "您是一个有用的AI助手。"},
+            {"role": "user", "content": f"{提示词}"},
+        ],
+        temperature=temperature,
+    )
+
+        # 获取回复
+    return response.choices[0].message.content
+
+zhipuAI("您好，请介绍一下西北民族大学广告学专业。") 
+
